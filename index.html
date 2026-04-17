@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Linea del Tiempo</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.titulo {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* cada línea tiene su propio scroll */
+.timeline-wrapper {
+  overflow-x: auto;
+  overflow-y: visible; /* evita que se corten las imágenes */
+  width: 90vw;
+  padding-top: 50px;  /* espacio para que las imágenes suban */
+  padding-bottom: 40px;
+}
+
+.timeline-wrapper::-webkit-scrollbar {
+  height: 12px;
+}
+.timeline-wrapper::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 6px;
+}
+
+.timeline {
+  display: flex;
+  gap: 60px;
+}
+
+.item {
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  flex-shrink: 0;
+  padding-top: 250px;
+}
+
+.item .name {
+  font-size: 16px;
+  color: #555;
+  margin-top: 45px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.preview {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.preview img {
+  width: 180px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.item:hover .preview {
+  opacity: 1;
+  bottom: 140px;
+}
+
+.item:hover .name {
+  opacity: 1;
+}
+.segunda-linea .timeline {
+  padding-left: 40px;
+
+}
+.tercer-linea .timeline {
+  padding-left: 40px;
+
+}
+.descripcion {
+  width: 90vw;
+  text-align: left;
+  font-size: 22px;
+  margin-top: 60px;
+  margin-bottom: -70px;
+}
+</style>
+</head>
+
+<body>
+<h1 class="titulo">Asi suena un proceso creativo</h1>
+<p class="descripcion">
+Dia uno
+</p>
+
+<!-- PRIMERA LÍNEA -->
+<div class="timeline-wrapper">
+  <div class="timeline">
+
+       <div class="item">
+      4:44
+      <div class="name">Call Me Little Sunshine</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2730d532f2d308ee9f58e0ad404">
+      </div>
+    </div>
+
+    <div class="item">
+      2:46
+      <div class="name">DASH</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b27381d97a31253b898bc4149195">
+      </div>
+    </div>
+
+    <div class="item">
+      3:29
+      <div class="name">Training Season</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273f5a775e66774883c06aabc70">
+      </div>
+    </div>
+
+    <div class="item">
+      4:41
+      <div class="name">Video Games</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273ebc8cfac8b586bc475b04918">
+      </div>
+    </div>
+
+    <div class="item">
+      2:28
+      <div class="name">SUPERMODEL</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d00001e025bcb1af9a2ccf3474473ed35">
+      </div>
+    </div>
+
+    <div class="item">
+      3:15
+      <div class="name">Im a Mess</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b27361fe6d3a50c0beaa3cfe33e9">
+      </div>
+    </div>
+
+    <div class="item">
+      3:11
+      <div class="name">Kill This Love</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273e20e5c366b497518353497b0">
+      </div>
+    </div>
+
+    <div class="item">
+      3:06
+      <div class="name">MAMMAMIA</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273553235260b499fc2df6e4ede">
+      </div>
+    </div>
+
+    <div class="item">
+      3:25
+      <div class="name">IDIOTA</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273ae9b161eee4e8f69c03d6fab">
+      </div>
+    </div>
+
+<div class="item">
+      3:42
+      <div class="name">Sequels</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d00001e0256e4e3118af9dec4a5670a33">
+      </div>
+    </div>
+
+<div class="item">
+      4:05
+      <div class="name">Miracle Aligner</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273345911a64e8e1722f3ba9f30">
+      </div>
+    </div>
+
+<div class="item">
+      3:42
+      <div class="name">My Kink Is Karma</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b27396fa88fb1789be437d5cb4b6">
+      </div>
+    </div>
+
+<div class="item">
+      3:33
+      <div class="name">Fancy</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273ff7c2dfd0ed9b2cf6bf9c818">
+      </div>
+    </div>
+
+<div class="item">
+      2:58
+      <div class="name">Supernova</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273b0201a6a4e736f74081331b8">
+      </div>
+    </div>
+
+<div class="item">
+      3:01
+      <div class="name">Fireside</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2734ae1c4c5c45aabe565499163">
+      </div>
+    </div>
+
+<div class="item">
+      3:16
+      <div class="name">Hunters Moon</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2733816183e40aece5d7786ae30">
+      </div>
+    </div>
+
+<div class="item">
+      3:17
+      <div class="name">Cornerstone</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273bea5eedc95deff44c65058aa">
+      </div>
+    </div>
+<div class="item">
+      4:05
+      <div class="name">Nervous</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2739b6ac98a52f62d5cb473da40">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<p class="descripcion">
+Dia dos
+</p>
+<!-- SEGUNDA LÍNEA -->
+<div class="timeline-wrapper segunda-linea">
+  <div class="timeline">
+
+    <div class="item">
+      3:08
+      <div class="name">THE DRIVER</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b27360b8c830ea0cfc3854cb4037">
+      </div>
+    </div>
+
+<div class="item">
+      3:25
+      <div class="name">PUSH AND PULL</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2734687e95bc88740e997be9e6b">
+      </div>
+    </div>
+
+<div class="item">
+      4:55
+      <div class="name">Art Deco</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273a3b3f48ca81acacb3ad4ec8a">
+      </div>
+    </div>
+
+<div class="item">
+      3:44
+      <div class="name">Crying Lightning</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273f65d720a5d70dbb93e96d528">
+      </div>
+    </div>
+
+<div class="item">
+      3:22
+      <div class="name">Nurses Office</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2734c45622b94251d5ac9bcfbb6">
+      </div>
+    </div>
+
+<div class="item">
+      3:56
+      <div class="name">Somewhere Only We Know</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273045d0a38105fbe7bde43c490">
+      </div>
+    </div>
+
+<div class="item">
+      3:05
+      <div class="name">I Want It All</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2730acf7f2eefe5bd36efbc26b4">
+      </div>
+    </div>
+
+<div class="item">
+      2:48
+      <div class="name">Wondrous Place</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2739c0447c6163f7c1838cf9586">
+      </div>
+    </div>
+
+<div class="item">
+      3:07
+      <div class="name">Consume</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273c56fd8f211a5de43f9a9e202">
+      </div>
+    </div>
+
+<div class="item">
+      2:40
+      <div class="name">MY BAG</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273c7b6b2976e38a802eebff046">
+      </div>
+    </div>
+
+<div class="item">
+      4:18
+      <div class="name">Pink Pony Club</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d00001e0296fa88fb1789be437d5cb4b6">
+      </div>
+    </div>
+  </div>
+</div>
+
+<p class="descripcion">
+Dia tres
+</p>
+<!-- TERCERA LÍNEA -->
+<div class="timeline-wrapper tercer-linea">
+  <div class="timeline">
+
+    <div class="item">
+      4:43
+      <div class="name">Dance Little Liar</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273758b7328e71d56dfa11fabf9">
+      </div>
+    </div>
+
+    <div class="item">
+      3:10
+      <div class="name">Automatic Sun</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273c182aaf9aa95dab76259045d">
+      </div>
+    </div>
+
+<div class="item">
+      3:26
+      <div class="name">Bad Girlfriend</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273dc92391aced8588a2029a40a">
+      </div>
+    </div>
+
+<div class="item">
+      3:39
+      <div class="name">Gas Dance</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d00001e0299845928b10d57ec9f95e953">
+      </div>
+    </div>
+
+<div class="item">
+      3:16
+      <div class="name">Spillways</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b27339df655040aa0f194c6d2972">
+      </div>
+    </div>
+
+<div class="item">
+      3:27
+      <div class="name">Life Eternal</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273d12e0639819f09e00d73410e">
+      </div>
+    </div>
+
+<div class="item">
+      2:59
+      <div class="name">ICKY</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2732ec4d7a492f72132e3b1da3a">
+      </div>
+    </div>
+
+<div class="item">
+      3:56
+      <div class="name">Stand By Him</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273fa169428c1d0c72857d86450">
+      </div>
+    </div>
+
+<div class="item">
+      3:04
+      <div class="name">HOT TO GO!</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b27396fa88fb1789be437d5cb4b6">
+      </div>
+    </div>
+
+<div class="item">
+      2:17
+      <div class="name">Come Over</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2731fc0f4faafaa183cc70297e5">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
