@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Retrato musical</title>
+
+<style>
+body {
+    background: black;
+    color: #00ff41;
+    font-family: monospace;
+    text-align: center;
+}
+
+.controls {
+    margin: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px;
+    font-family: monospace;
+}
+
+pre {
+    font-size: 8px;
+    white-space: pre;
+}
+</style>
+</head>
+
+<body>
+
+<div class="controls">
+    <button id="startBtn">🎥</button>
+    <button id="stopBtn">⏹</button>
+    <button id="pauseMusicBtn">⏸</button>
+</div>
+
+<div>
+    FPS: <span id="fps">0</span>
+</div>
+
+<pre id="asciiArt"></pre>
+
+<audio id="bgMusic"></audio>
+<video id="video" autoplay playsinline style="display:none"></video>
+<canvas id="canvas" style="display:none"></canvas>
+
+<script>
+// ================= VARIABLES =================
+let video = document.getElementById('video');
+let canvas = document.getElementById('canvas');
+let ctx = canvas.getContext('2d');
+let asciiPre = document.getElementById('asciiArt');
+
+let stream = null;
+let animationId = null;
+let lastTime = 0;
+let frames = 0;
+
+// ================= MÚSICA =================
+const music = document.getElementById('bgMusic');
+
+const songs = [
+    'song1.mp3',
+    'song2.mp3',
+    'song3.mp3',
+    'song4.mp3',
+    'song5.mp3',
+    'song6.mp3',
+	'song7.mp3',
+    'song8.mp3'
+];
+
+// 🎨 COLORES sincronizados
+const colors = [
+    '#00ff41',
+    '#ffffff',
+    '#ff00ff',
+    '#00ffff',
+    '#ffff00',
+    '#ff0000',
+	'#53588A',
+    '#EB7107'
+];
+
+let currentSong = 0;
+
+function playSong(i){
+    music.src = songs[i];
+    music.play().catch(()=>{});
+}
+
+// 🔥 TECLA = CANCIÓN + COLOR
+document.addEventListener('keydown', ()=>{
+    currentSong = (currentSong + 1) % songs.length;
+    playSong(currentSong);
+});
+
+// BOTÓN PAUSA
+const pauseBtn = document.getElementById('pauseMusicBtn');
+
+pauseBtn.addEventListener('click', ()=>{
+    if(music.paused){
+        music.play();
+        pauseBtn.textContent = "⏸";
+    } else {
+        music.pause();
+        pauseBtn.textContent = "▶️";
+    }
+});
+
+// ================= CHARSET =================
+const charSet = 'spotify';
+
+// ================= ASCII =================
+function imageToAscii(data, w, h){
+    let ascii = '';
+
+    const invert = false; // 🔥 FIX: evita error
+
+    for(let y=0;y<h;y++){
+        for(let x=0;x<w;x++){
+            let i = (y*w+x)*4;
+            let b = (data[i]+data[i+1]+data[i+2])/3/255;
+
+            if(invert){
+                b = 1 - b;
+            }
+
+            let index = Math.floor(b*(charSet.length-1));
+            ascii += charSet[index];
+        }
+        ascii += '\n';
+    }
+
+    return ascii;
+}
+
+// ================= LOOP =================
+function render(){
+    const res = 240;
+
+    canvas.width = res;
+    canvas.height = res * (video.videoHeight / video.videoWidth);
+
+    ctx.save();
+
+// 🔥 quitar efecto espejo
+ctx.translate(canvas.width, 0);
+ctx.scale(-1, 1);
+
+ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+ctx.restore();
+    let frame = ctx.getImageData(0,0,canvas.width,canvas.height);
+
+    asciiPre.textContent = imageToAscii(frame.data,canvas.width,canvas.height);
+
+    // 🎨 COLOR DINÁMICO
+    asciiPre.style.color = colors[currentSong];
+
+    // FPS
+    frames++;
+    let now = performance.now();
+    if(now-lastTime>=1000){
+        document.getElementById('fps').textContent = frames;
+        frames=0;
+        lastTime=now;
+    }
+
+    animationId = requestAnimationFrame(render);
+}
+
+// ================= CÁMARA =================
+async function startCamera(){
+    stream = await navigator.mediaDevices.getUserMedia({video:true});
+    video.srcObject = stream;
+    await video.play();
+
+    playSong(currentSong);
+    render();
+}
+
+function stopCamera(){
+    if(animationId) cancelAnimationFrame(animationId);
+
+    if(stream){
+        stream.getTracks().forEach(t=>t.stop());
+        stream=null;
+    }
+
+    asciiPre.textContent="Cámara detenida";
+}
+
+// ================= EVENTOS =================
+document.getElementById('startBtn').onclick = startCamera;
+document.getElementById('stopBtn').onclick = stopCamera;
+
+asciiPre.textContent="Presiona 🎥";
+</script>
+
+</body>
+</html><html>
+<head>
+<meta charset="UTF-8">
+<title>Documento sin título</title>
+</head>
+
+<body>
+</body>
+</html>
