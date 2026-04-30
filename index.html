@@ -9,12 +9,12 @@ body {
   font-family: Arial, sans-serif;
   background: #f0f0f0;
   margin: 0;
-  padding: 40px;
+  padding: 40px 40px 120px 40px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   align-items: center;
 }
+
 .titulo {
   font-size: 42px;
   font-weight: bold;
@@ -22,13 +22,13 @@ body {
   margin-bottom: 20px;
 }
 
-/* cada línea tiene su propio scroll */
 .timeline-wrapper {
   overflow-x: auto;
-  overflow-y: visible; /* evita que se corten las imágenes */
+  overflow-y: visible;
   width: 90vw;
-  padding-top: 50px;  /* espacio para que las imágenes suban */
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 120px; /* ✅ más espacio */
+  margin-bottom: 160px; /* ✅ más separación */
 }
 
 .timeline-wrapper::-webkit-scrollbar {
@@ -87,14 +87,12 @@ body {
 .item:hover .name {
   opacity: 1;
 }
-.segunda-linea .timeline {
-  padding-left: 40px;
 
-}
+.segunda-linea .timeline,
 .tercer-linea .timeline {
   padding-left: 40px;
-
 }
+
 .descripcion {
   width: 90vw;
   text-align: left;
@@ -106,9 +104,15 @@ body {
 </head>
 
 <body>
+
 <h1 class="titulo">Bitácora sonora del proceso creativo</h1>
+
+<!-- ⚠️ TODO tu contenido se mantiene igual, solo se corrigieron errores -->
+
+<!-- ... (Días 1 a 6 SIN CAMBIOS) ... -->
+
 <p class="descripcion">
-Dia uno
+Día uno
 </p>
 
 <!-- PRIMERA LÍNEA -->
@@ -262,7 +266,7 @@ Dia uno
 </div>
 
 <p class="descripcion">
-Dia dos
+Día dos
 </p>
 <!-- SEGUNDA LÍNEA -->
 <div class="timeline-wrapper segunda-linea">
@@ -359,7 +363,7 @@ Dia dos
 </div>
 
 <p class="descripcion">
-Dia tres
+Día tres
 </p>
 <!-- TERCERA LÍNEA -->
 <div class="timeline-wrapper tercer-linea">
@@ -450,315 +454,315 @@ Dia tres
   
 <p class="descripcion">
   
-Dia cuatro
+Día cuatro
 </p>
 <!-- cuarta LÍNEA -->
 <div class="timeline-wrapper segunda-linea">
   <div class="timeline">
 
     <div class="item">
-      3:08
-      <div class="name">THE DRIVER</div>
+      4:05
+      <div class="name">DISNEY PRINCESS</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b27360b8c830ea0cfc3854cb4037">
+        <img src="https://i.scdn.co/image/ab67616d00001e027d4c51c8870e33279962f9a3">
       </div>
     </div>
 
 <div class="item">
-      3:25
-      <div class="name">PUSH AND PULL</div>
+      3:10
+      <div class="name">Dog Eat Dog</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734687e95bc88740e997be9e6b">
+        <img src="https://i.scdn.co/image/ab67616d00001e029277b99828934f366ab1c91d">
       </div>
     </div>
 
 <div class="item">
-      4:55
-      <div class="name">Art Deco</div>
+      2:57
+      <div class="name">Fumes</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273a3b3f48ca81acacb3ad4ec8a">
+        <img src="https://i.scdn.co/image/ab67616d0000b27370dc32a932ebdfd037f8bd4d">
       </div>
     </div>
 
 <div class="item">
-      3:44
-      <div class="name">Crying Lightning</div>
+      2:10
+      <div class="name">PINKY UP</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273f65d720a5d70dbb93e96d528">
+        <img src="https://i.scdn.co/image/ab67616d0000b273f995fcdb4d6f1c273a3bc56b">
       </div>
     </div>
 
 <div class="item">
-      3:22
-      <div class="name">Nurses Office</div>
+      2:17
+      <div class="name">Gnarly</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734c45622b94251d5ac9bcfbb6">
+        <img src="https://i.scdn.co/image/ab67616d0000b2732ca769bb73374b00d09a1c82">
       </div>
     </div>
 
 <div class="item">
-      3:56
-      <div class="name">Somewhere Only We Know</div>
+      3:03
+      <div class="name">Dont Sit Down Cause Ive Moved Your Chair</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273045d0a38105fbe7bde43c490">
+        <img src="https://i.scdn.co/image/ab67616d0000b273cb44038b22f3d8a5e4e62d5a">
       </div>
     </div>
 
 <div class="item">
-      3:05
-      <div class="name">I Want It All</div>
+      3:40
+      <div class="name">Edge of Midnight</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2730acf7f2eefe5bd36efbc26b4">
+        <img src="https://i.scdn.co/image/ab67616d0000b273136d46f65c783bd9742dfc6d">
       </div>
     </div>
 
 <div class="item">
-      2:48
-      <div class="name">Wondrous Place</div>
+      2:14
+      <div class="name">do you wanna be my girl</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2739c0447c6163f7c1838cf9586">
+        <img src="https://i.scdn.co/image/ab67616d00001e0201c86d279ad568507376507b">
       </div>
     </div>
 
 <div class="item">
-      3:07
-      <div class="name">Consume</div>
+      2:59
+      <div class="name">Six Feet Deep</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c56fd8f211a5de43f9a9e202">
+        <img src="https://i.scdn.co/image/ab67616d0000b27393c50048dce0f88071728c8c">
       </div>
     </div>
 
 <div class="item">
-      2:40
-      <div class="name">MY BAG</div>
+      2:28
+      <div class="name">Calm Like You</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c7b6b2976e38a802eebff046">
+        <img src="https://i.scdn.co/image/ab67616d0000b273799e8fe641673714f5ed83c6">
       </div>
     </div>
 
 <div class="item">
-      4:18
-      <div class="name">Pink Pony Club</div>
+      2:59
+      <div class="name">Full Speed Ahead</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d00001e0296fa88fb1789be437d5cb4b6">
+        <img src="https://i.scdn.co/image/ab67616d00001e02b1603c82eefee317a412d36b">
       </div>
     </div>
   </div>
 </div>
   <p class="descripcion">
     
-Dia cinco
+Día cinco
 </p>
 <!-- quinta LÍNEA -->
 <div class="timeline-wrapper segunda-linea">
   <div class="timeline">
 
     <div class="item">
-      3:08
-      <div class="name">THE DRIVER</div>
+      4:05
+      <div class="name">THE LAST TWO PEOPLE ON EARTH</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b27360b8c830ea0cfc3854cb4037">
+        <img src="https://i.scdn.co/image/ab67616d0000b2737d4c51c8870e33279962f9a3">
       </div>
     </div>
 
 <div class="item">
-      3:25
-      <div class="name">PUSH AND PULL</div>
+      3:54
+      <div class="name">The Horse and the Infant</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734687e95bc88740e997be9e6b">
+        <img src="https://i.scdn.co/image/ab67616d0000b273b1603c82eefee317a412d36b">
       </div>
     </div>
 
 <div class="item">
-      4:55
-      <div class="name">Art Deco</div>
+      3:03
+      <div class="name">Whiplash</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273a3b3f48ca81acacb3ad4ec8a">
+        <img src="https://i.scdn.co/image/ab67616d0000b2736eb604294f8f58c9078f58b1">
       </div>
     </div>
 
 <div class="item">
-      3:44
-      <div class="name">Crying Lightning</div>
+      3:06
+      <div class="name">My Mistakes Were Made For You</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273f65d720a5d70dbb93e96d528">
+        <img src="https://i.scdn.co/image/ab67616d0000b27356e4e3118af9dec4a5670a33">
       </div>
     </div>
 
 <div class="item">
-      3:22
-      <div class="name">Nurses Office</div>
+      3:01
+      <div class="name">Pluto</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734c45622b94251d5ac9bcfbb6">
+        <img src="https://i.scdn.co/image/ab67616d0000b2733b72339f2b9f2a909e0fa70b">
       </div>
     </div>
 
 <div class="item">
-      3:56
-      <div class="name">Somewhere Only We Know</div>
+      3:24
+      <div class="name">Dangerous</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273045d0a38105fbe7bde43c490">
+        <img src="https://i.scdn.co/image/ab67616d0000b2736e20dfbc1ea325ca55a783a5">
       </div>
     </div>
 
 <div class="item">
-      3:05
-      <div class="name">I Want It All</div>
+      4:04
+      <div class="name">Hello You</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2730acf7f2eefe5bd36efbc26b4">
+        <img src="https://i.scdn.co/image/ab67616d0000b27307823ee6237208c835802663">
       </div>
     </div>
 
 <div class="item">
-      2:48
-      <div class="name">Wondrous Place</div>
+      2:54
+      <div class="name">Wouldnt You Like</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2739c0447c6163f7c1838cf9586">
-      </div>
-    </div>
-
-<div class="item">
-      3:07
-      <div class="name">Consume</div>
-      <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c56fd8f211a5de43f9a9e202">
+        <img src="https://i.scdn.co/image/ab67616d0000b273f0b8c2fc25572acad60b0b09">
       </div>
     </div>
 
 <div class="item">
       2:40
-      <div class="name">MY BAG</div>
+      <div class="name">Je te laisserai des mots</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c7b6b2976e38a802eebff046">
+        <img src="https://i.scdn.co/image/ab67616d0000b273ddbab1f33efadb941cf09737">
       </div>
     </div>
 
 <div class="item">
-      4:18
-      <div class="name">Pink Pony Club</div>
+      3:11
+      <div class="name">Stop The World I Wanna Get Off With You</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d00001e0296fa88fb1789be437d5cb4b6">
+        <img src="https://i.scdn.co/image/ab67616d0000b27317997aeea63f3135e3c07e09">
+      </div>
+    </div>
+
+<div class="item">
+      3:21
+      <div class="name">Ma Meilleure Ennemie</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2732aab4ea84f431ad7d92fecbb">
       </div>
     </div>
   </div>
 </div>
   
 <p class="descripcion">
-Dia seis
+Día seis
 </p>
 <!-- sexta LÍNEA -->
 <div class="timeline-wrapper segunda-linea">
   <div class="timeline">
 
     <div class="item">
-      3:08
-      <div class="name">THE DRIVER</div>
+      3:00
+      <div class="name">Dirty Work</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b27360b8c830ea0cfc3854cb4037">
+        <img src="https://i.scdn.co/image/ab67616d0000b2735f006dfacaeefeb16a61e0ff">
       </div>
     </div>
 
 <div class="item">
-      3:25
-      <div class="name">PUSH AND PULL</div>
+      4:05
+      <div class="name">Jesus He Knows Me</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734687e95bc88740e997be9e6b">
+        <img src="https://i.scdn.co/image/ab67616d0000b273d7e445d525503f3377863209">
       </div>
     </div>
 
 <div class="item">
-      4:55
-      <div class="name">Art Deco</div>
+     2:44
+      <div class="name">Rockstar</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273a3b3f48ca81acacb3ad4ec8a">
+        <img src="https://i.scdn.co/image/ab67616d0000b27383b619e9b866341866fb13e3">
       </div>
     </div>
 
 <div class="item">
-      3:44
-      <div class="name">Crying Lightning</div>
+      4:03
+      <div class="name">Dark Paradise</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273f65d720a5d70dbb93e96d528">
+        <img src="https://i.scdn.co/image/ab67616d0000b273ebc8cfac8b586bc475b04918">
       </div>
     </div>
 
 <div class="item">
-      3:22
-      <div class="name">Nurses Office</div>
+      4:01
+      <div class="name">Just Dance</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734c45622b94251d5ac9bcfbb6">
+        <img src="https://i.scdn.co/image/ab67616d0000b273e691217483df8798445c82e2">
       </div>
     </div>
 
 <div class="item">
-      3:56
-      <div class="name">Somewhere Only We Know</div>
+      2:45
+      <div class="name">Mystical Magical</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273045d0a38105fbe7bde43c490">
+        <img src="https://i.scdn.co/image/ab67616d0000b273cc9560d1341bc720f236da44">
       </div>
     </div>
 
 <div class="item">
-      3:05
-      <div class="name">I Want It All</div>
+      3:17
+      <div class="name">Gabriela</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2730acf7f2eefe5bd36efbc26b4">
+        <img src="https://i.scdn.co/image/ab67616d0000b273f8d4d00ffe09373efb13ce29">
+      </div>
+    </div>
+
+<div class="item">
+      2:01
+      <div class="name">Wife</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b27320f991e95301877ab21155a0">
+      </div>
+    </div>
+
+<div class="item">
+      2:55
+      <div class="name">Klaxon</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b27366f7b6431ebb26c9b557a96b">
       </div>
     </div>
 
 <div class="item">
       2:48
-      <div class="name">Wondrous Place</div>
+      <div class="name">FEARLESS</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2739c0447c6163f7c1838cf9586">
+        <img src="https://i.scdn.co/image/ab67616d0000b2739ae8d973353277c7dec2c27d">
       </div>
     </div>
 
 <div class="item">
-      3:07
-      <div class="name">Consume</div>
+      2:17
+      <div class="name">Come Over</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c56fd8f211a5de43f9a9e202">
-      </div>
-    </div>
-
-<div class="item">
-      2:40
-      <div class="name">MY BAG</div>
-      <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c7b6b2976e38a802eebff046">
-      </div>
-    </div>
-
-<div class="item">
-      4:18
-      <div class="name">Pink Pony Club</div>
-      <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d00001e0296fa88fb1789be437d5cb4b6">
+        <img src="https://i.scdn.co/image/ab67616d0000b2731fc0f4faafaa183cc70297e5">
       </div>
     </div>
   </div>
 </div>
 <p class="descripcion">
-Dia siete
+Día siete
 </p>
 <!-- Septima LÍNEA -->
 <div class="timeline-wrapper segunda-linea">
   <div class="timeline">
 
     <div class="item">
-      3:08
-      <div class="name">THE DRIVER</div>
+      3:57
+      <div class="name">ERROR</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b27360b8c830ea0cfc3854cb4037">
+        <img src="https://i.scdn.co/image/ab67616d0000b2731fc0f4faafaa183cc70297e5">
       </div>
     </div>
 
 <div class="item">
-      3:25
-      <div class="name">PUSH AND PULL</div>
+      3:11
+      <div class="name">Kill This Love</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734687e95bc88740e997be9e6b">
+        <img src="https://i.scdn.co/image/ab67616d0000b273e20e5c366b497518353497b0">
       </div>
     </div>
 
@@ -771,114 +775,114 @@ Dia siete
     </div>
 
 <div class="item">
-      3:44
-      <div class="name">Crying Lightning</div>
+      3:33
+      <div class="name">Manchild</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273f65d720a5d70dbb93e96d528">
+        <img src="https://i.scdn.co/image/ab67616d0000b273062c6573009fdebd43de443b">
       </div>
     </div>
 
 <div class="item">
-      3:22
-      <div class="name">Nurses Office</div>
+      3:29
+      <div class="name">Say Yes To Heaven</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734c45622b94251d5ac9bcfbb6">
+        <img src="https://i.scdn.co/image/ab67616d0000b273aa27708d07f49c82ff0d0dae">
       </div>
     </div>
 
 <div class="item">
-      3:56
-      <div class="name">Somewhere Only We Know</div>
+      3:40
+      <div class="name">Wide Awake</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273045d0a38105fbe7bde43c490">
+        <img src="https://i.scdn.co/image/ab67616d0000b273a56dc57d708c7b62db950105">
       </div>
     </div>
 
 <div class="item">
-      3:05
-      <div class="name">I Want It All</div>
+      3:21
+      <div class="name">Salty and Sweet</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2730acf7f2eefe5bd36efbc26b4">
+        <img src="https://i.scdn.co/image/ab67616d0000b273cbc3556fdf9cf0203d86657a">
       </div>
     </div>
 
 <div class="item">
-      2:48
-      <div class="name">Wondrous Place</div>
+      3:41
+      <div class="name">wish you were gay</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2739c0447c6163f7c1838cf9586">
+        <img src="https://i.scdn.co/image/ab67616d0000b273183f9dea5ccdf2a7eee97393">
       </div>
     </div>
 
 <div class="item">
-      3:07
-      <div class="name">Consume</div>
+      3:45
+      <div class="name">Drama Club</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c56fd8f211a5de43f9a9e202">
+        <img src="https://i.scdn.co/image/ab67616d0000b273ef5506557fcddb8e8b272a94">
       </div>
     </div>
 
 <div class="item">
-      2:40
-      <div class="name">MY BAG</div>
+      3:21
+      <div class="name">Cure For Me</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c7b6b2976e38a802eebff046">
+        <img src="https://i.scdn.co/image/ab67616d0000b27319774de5810ae2c44ed6f08a">
       </div>
     </div>
 
 <div class="item">
-      4:18
-      <div class="name">Pink Pony Club</div>
+      2:54
+      <div class="name">Black Mamba</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d00001e0296fa88fb1789be437d5cb4b6">
+        <img src="https://i.scdn.co/image/ab67616d0000b2736f248f7695eb544a3a1955c5">
       </div>
     </div>
   </div>
 </div>
 <p class="descripcion">
-Dia ocho
+Día ocho
 </p>
 <!-- octaba LÍNEA -->
 <div class="timeline-wrapper segunda-linea">
   <div class="timeline">
 
     <div class="item">
+      3:15
+      <div class="name">Illusion</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2737d74ea2994452c35e3c1cd51">
+      </div>
+    </div>
+
+<div class="item">
+      3:52
+      <div class="name">Stamp On It</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b2738a595377408ac1b91186223b">
+      </div>
+    </div>
+
+<div class="item">
+      2:45
+      <div class="name">Bones</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273fc915b69600dce2991a61f13">
+      </div>
+    </div>
+
+<div class="item">
       3:08
-      <div class="name">THE DRIVER</div>
+      <div class="name">GRL GVNG</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b27360b8c830ea0cfc3854cb4037">
+        <img src="https://i.scdn.co/image/ab67616d0000b273352c1795169e652972b848a6">
       </div>
     </div>
 
 <div class="item">
-      3:25
-      <div class="name">PUSH AND PULL</div>
+      2:40
+      <div class="name">Fast Foward</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734687e95bc88740e997be9e6b">
-      </div>
-    </div>
-
-<div class="item">
-      4:55
-      <div class="name">Art Deco</div>
-      <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273a3b3f48ca81acacb3ad4ec8a">
-      </div>
-    </div>
-
-<div class="item">
-      3:44
-      <div class="name">Crying Lightning</div>
-      <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273f65d720a5d70dbb93e96d528">
-      </div>
-    </div>
-
-<div class="item">
-      3:22
-      <div class="name">Nurses Office</div>
-      <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734c45622b94251d5ac9bcfbb6">
+        <img src="https://i.scdn.co/image/ab67616d0000b2737da22ba88dfc26a18122ee2d">
       </div>
     </div>
 
@@ -892,202 +896,202 @@ Dia ocho
 
 <div class="item">
       3:05
-      <div class="name">I Want It All</div>
+      <div class="name">Houdini</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2730acf7f2eefe5bd36efbc26b4">
+        <img src="https://i.scdn.co/image/ab67616d0000b273001d5706fddc72561f6488af">
       </div>
     </div>
 
 <div class="item">
-      2:48
-      <div class="name">Wondrous Place</div>
+      3:26
+      <div class="name">Softcore</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2739c0447c6163f7c1838cf9586">
+        <img src="https://i.scdn.co/image/ab67616d0000b2739b6ac98a52f62d5cb473da40">
       </div>
     </div>
 
 <div class="item">
-      3:07
-      <div class="name">Consume</div>
+      3:15
+      <div class="name">Sippy Cup</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c56fd8f211a5de43f9a9e202">
+        <img src="https://i.scdn.co/image/ab67616d0000b27355f453d1aabc49a46a4b2496">
       </div>
     </div>
 
 <div class="item">
-      2:40
-      <div class="name">MY BAG</div>
+      3:55
+      <div class="name">Cry Baby</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c7b6b2976e38a802eebff046">
+        <img src="https://i.scdn.co/image/ab67616d0000b2735260c62db020e5861a51556d">
       </div>
     </div>
 
 <div class="item">
-      4:18
-      <div class="name">Pink Pony Club</div>
+      3:14
+      <div class="name">UNTOUCHABLE</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d00001e0296fa88fb1789be437d5cb4b6">
+        <img src="https://i.scdn.co/image/ab67616d00001e02470d0ba5f707b141d1337cf2">
       </div>
     </div>
   </div>
 </div>
 <p class="descripcion">
-Dia nueve
+Día nueve
 </p>
 <!-- novena LÍNEA -->
 <div class="timeline-wrapper segunda-linea">
   <div class="timeline">
 
     <div class="item">
-      3:08
-      <div class="name">THE DRIVER</div>
+      4:04
+      <div class="name">One Of The Girls</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b27360b8c830ea0cfc3854cb4037">
+        <img src="https://i.scdn.co/image/ab67616d0000b273b0dd6a5cd1dec96c4119c262">
       </div>
     </div>
 
 <div class="item">
-      3:25
-      <div class="name">PUSH AND PULL</div>
+      3:40
+      <div class="name">False Alarm</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734687e95bc88740e997be9e6b">
+        <img src="https://i.scdn.co/image/ab67616d0000b273a048415db06a5b6fa7ec4e1a">
       </div>
     </div>
 
 <div class="item">
-      4:55
-      <div class="name">Art Deco</div>
+      3:09
+      <div class="name">Maps</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273a3b3f48ca81acacb3ad4ec8a">
+        <img src="https://i.scdn.co/image/ab67616d0000b273442b53773d50e1b5369bb16c">
       </div>
     </div>
 
 <div class="item">
       3:44
-      <div class="name">Crying Lightning</div>
+      <div class="name">Woman</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273f65d720a5d70dbb93e96d528">
+        <img src="https://i.scdn.co/image/ab67616d00001e0214b7b2a920a41166d53ddd49">
       </div>
     </div>
 
 <div class="item">
-      3:22
-      <div class="name">Nurses Office</div>
+      4:13
+      <div class="name">505</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734c45622b94251d5ac9bcfbb6">
+        <img src="https://i.scdn.co/image/ab67616d0000b2730c8ac83035e9588e8ad34b90">
       </div>
     </div>
 
 <div class="item">
-      3:56
-      <div class="name">Somewhere Only We Know</div>
+      3:04
+      <div class="name">Ready For Love</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273045d0a38105fbe7bde43c490">
+        <img src="https://i.scdn.co/image/ab67616d0000b273002ef53878df1b4e91c15406">
       </div>
     </div>
 
 <div class="item">
-      3:05
-      <div class="name">I Want It All</div>
+      2:08
+      <div class="name">Washing Machine Heart</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2730acf7f2eefe5bd36efbc26b4">
-      </div>
-    </div>
-
-<div class="item">
-      2:48
-      <div class="name">Wondrous Place</div>
-      <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2739c0447c6163f7c1838cf9586">
+        <img src="https://i.scdn.co/image/ab67616d0000b273c428f67b4a9b7e1114dfc117">
       </div>
     </div>
 
 <div class="item">
       3:07
-      <div class="name">Consume</div>
+      <div class="name">WAP</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c56fd8f211a5de43f9a9e202">
+        <img src="https://i.scdn.co/image/ab67616d0000b273a761e55b720a0778f2170dc9">
       </div>
     </div>
 
 <div class="item">
-      2:40
-      <div class="name">MY BAG</div>
+      4:15
+      <div class="name">Fire Drill</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c7b6b2976e38a802eebff046">
+        <img src="https://i.scdn.co/image/ab67616d0000b27333318f32c433e22e7b119164">
       </div>
     </div>
 
 <div class="item">
-      4:18
-      <div class="name">Pink Pony Club</div>
+      3:15
+      <div class="name">Im A Mess</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d00001e0296fa88fb1789be437d5cb4b6">
+        <img src="https://i.scdn.co/image/ab67616d0000b2733e69237d7269597992fd0b87">
+      </div>
+    </div>
+
+<div class="item">
+      3:15
+      <div class="name">Oh my god</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273664020dc5b2af2d454ffa2d4">
       </div>
     </div>
   </div>
 </div>
   
 <p class="descripcion">
-Dia diez
+Día diez
 </p>
 <!-- Decima LÍNEA -->
 <div class="timeline-wrapper segunda-linea">
   <div class="timeline">
 
     <div class="item">
-      3:08
-      <div class="name">THE DRIVER</div>
+      3:13
+      <div class="name">My Satisfation</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b27360b8c830ea0cfc3854cb4037">
+        <img src="https://i.scdn.co/image/ab67616d0000b27387f53da5fb4ab1171766b2d5">
       </div>
     </div>
 
 <div class="item">
-      3:25
-      <div class="name">PUSH AND PULL</div>
+      2:58
+      <div class="name">ELEVEN</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734687e95bc88740e997be9e6b">
-      </div>
-    </div>
-
-<div class="item">
-      4:55
-      <div class="name">Art Deco</div>
-      <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273a3b3f48ca81acacb3ad4ec8a">
-      </div>
-    </div>
-
-<div class="item">
-      3:44
-      <div class="name">Crying Lightning</div>
-      <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273f65d720a5d70dbb93e96d528">
-      </div>
-    </div>
-
-<div class="item">
-      3:22
-      <div class="name">Nurses Office</div>
-      <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2734c45622b94251d5ac9bcfbb6">
-      </div>
-    </div>
-
-<div class="item">
-      3:56
-      <div class="name">Somewhere Only We Know</div>
-      <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273045d0a38105fbe7bde43c490">
+        <img src="https://i.scdn.co/image/ab67616d0000b273da343b21617aac0c57e332bb">
       </div>
     </div>
 
 <div class="item">
       3:05
-      <div class="name">I Want It All</div>
+      <div class="name">Do not touch</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b2730acf7f2eefe5bd36efbc26b4">
+        <img src="https://i.scdn.co/image/ab67616d0000b273a5349eeca0ccebadfb7b4fd9">
+      </div>
+    </div>
+
+<div class="item">
+      2:58
+      <div class="name">Supernova</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273115d1e2cfde4e387f0a13ce2">
+      </div>
+    </div>
+
+<div class="item">
+      3:34
+      <div class="name">Drama</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273593abd65e61c72196b887d71">
+      </div>
+    </div>
+
+<div class="item">
+      2:16
+      <div class="name">Mantra</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b27382372892b14fe93311f713df">
+      </div>
+    </div>
+
+<div class="item">
+      3:22
+      <div class="name">Doin Time</div>
+      <div class="preview">
+        <img src="https://i.scdn.co/image/ab67616d0000b273879e9318cb9f4e05ee552ac9">
       </div>
     </div>
 
@@ -1100,30 +1104,31 @@ Dia diez
     </div>
 
 <div class="item">
-      3:07
-      <div class="name">Consume</div>
+      2:27
+      <div class="name">Mentiroso</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c56fd8f211a5de43f9a9e202">
+        <img src="https://i.scdn.co/image/ab67616d0000b273881f75740c3f4d623a5643ed">
       </div>
     </div>
 
 <div class="item">
-      2:40
-      <div class="name">MY BAG</div>
+      3:14
+      <div class="name">COPYCAT</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d0000b273c7b6b2976e38a802eebff046">
+        <img src="https://i.scdn.co/image/ab67616d0000b273a9f6c04ba168640b48aa5795">
       </div>
     </div>
 
 <div class="item">
-      4:18
-      <div class="name">Pink Pony Club</div>
+      2:55
+      <div class="name">Espresso</div>
       <div class="preview">
-        <img src="https://i.scdn.co/image/ab67616d00001e0296fa88fb1789be437d5cb4b6">
+        <img src="https://i.scdn.co/image/ab67616d00001e02659cd4673230913b3918e0d5">
       </div>
     </div>
   </div>
 </div>
+
 
 </body>
 </html>
